@@ -6,7 +6,7 @@
 # Maintainer: Your Name <keyaedisa>
 pkgname="vnanorc"
 pkgver=1.0
-pkgrel=0
+pkgrel=1
 epoch=
 pkgdesc="Keyaedisa's nano config made for Valen and XeroLinux (and whoever else :))"
 arch=('x86_64' 'i686')
@@ -33,6 +33,7 @@ source=("gc"::"git+https://github.com/keyaedisa/vnanorc.git")
 sha256sums=('SKIP')
 
 package() {
+	mkdir "${pkgdir}/etc/"
 	mv "${srcdir}/gc/vnanorc" "${pkgdir}/etc/"
 	rm -r "${srcdir}" "../gc/"
 }
