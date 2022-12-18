@@ -6,7 +6,7 @@
 # Maintainer: Your Name <keyaedisa>
 pkgname="vnanorc"
 pkgver=1.0
-pkgrel=0
+pkgrel=1
 epoch=
 pkgdesc="Keyaedisa's nano config made for Valen and XeroLinux (and whoever else :))"
 arch=('x86_64' 'i686')
