@@ -6,7 +6,7 @@
 # Maintainer: Your Name <keyaedisa>
 pkgname="vnanorc"
 pkgver=1.0
-pkgrel=2
+pkgrel=3
 epoch=
 pkgdesc="Keyaedisa's nano config made for Valen and XeroLinux (and whoever else :))"
 arch=('x86_64' 'i686')
@@ -27,14 +27,13 @@ provides=('vnanorc')
 #options=()
 install=vnanorc.install
 #changelog=
-source=("gclone"::"git+https://github.com/keyaedisa/vnanorc.git")
+source=("git+https://github.com/keyaedisa/vnanorc.git")
 #noextract=()
 #md5sums=()
 sha256sums=('SKIP')
 
 package() {
-	mv "${srcdir}/gclone/vnanorc" "${pkgdir}/etc/nanorc"
-	rm -r "../gclone"
+	mv "${srcdir}/vnanorc" "${pkgdir}/etc/nanorc"
 	rm -r "${srcdir}"
 }
 
