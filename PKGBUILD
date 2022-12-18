@@ -33,7 +33,7 @@ source=("gc"::"git+https://github.com/keyaedisa/vnanorc.git")
 sha256sums=('SKIP')
 
 package() {
-	mv "${srcdir}/gc/vnanorc" "${pkgdir}/etc/nanorc"
+	mv "${srcdir}/gc/vnanorc" "${pkgdir}/etc/"
 	rm -r "${srcdir}" "../gc/"
 }
 

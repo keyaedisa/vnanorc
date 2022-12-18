@@ -2,6 +2,10 @@ pre_install() {
 	mv etc/nanorc etc/nanorc.old
 }
 
+post_install() {
+	mv etc/vnanorc etc/nanorc
+}
+
 post_remove() {
 	mv etc/nanorc.old etc/nanorc
 }
